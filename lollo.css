@@ -1,0 +1,180 @@
+body{
+  margin: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+
+
+.container-image {
+  position: fixed;
+  top: 4%; /* Regola la distanza dal bordo superiore della pagina */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.container-image img {
+  width: 60px; /* Imposta la larghezza desiderata per il logo */
+  height: auto;
+}
+
+
+.form {
+    --input-focus: #2df03a;
+    --font-color: #fefefe;
+    --font-color-sub: #7e7e7e;
+    --bg-color: #111;
+    --main-color: #fefefe;
+    margin: 0;
+    padding: 20px;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    /*box-shadow: 4px 4px var(--main-color);*/
+  }
+  
+  .title {
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .title span {
+    color: var(--font-color-sub);
+    font-weight: 600;
+    font-size: 17px;
+  }
+  
+  .input {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    /*box-shadow: 4px 4px var(--main-color);*/
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+    margin-bottom: 30px;
+  }
+  
+  .input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+  }
+  
+  .input:focus {
+    border: 2px solid var(--input-focus);
+  }
+  
+  .login-with {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .button-log {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    /*box-shadow: 4px 4px var(--main-color);*/
+    color: var(--font-color);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--main-color);
+  }
+  
+  .button-log:active, .button-confirm:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+  }
+  
+  .button-confirm {
+    margin: 50px auto 0 auto;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    /*box-shadow: 4px 4px var(--main-color);*/
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+
+
+  /* Stile quando il pulsante è disabilitato */
+.button-confirm:disabled {
+   /* Colore di sfondo più scuro quando il pulsante è disabilitato */
+  color: #7e7e7e; /* Colore del testo più chiaro quando il pulsante è disabilitato */
+  border: 2px solid #7e7e7e;
+}
+
+/* Stile quando il pulsante è attivo */
+.button-confirm:not(:disabled) {
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+  /* Altri stili desiderati quando il pulsante è attivo */
+}
+
+  
+
+
+/* Aggiungi questo stile per il footer */
+footer {
+  background-color: #000000;
+  color: var(--font-color-sub);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer span{
+  --font-color-sub: #7e7e7e;
+  color: var(--font-color-sub);
+  font-size: 13.5px;
+}
+
+
+
+.signup-link {
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
